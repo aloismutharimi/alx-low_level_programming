@@ -1,4 +1,4 @@
-#include <stdlib>
+#include <stdio.h>
 /*
  * main - Entry point
  * Return: 0 (Success)
@@ -9,7 +9,7 @@ int main(void)
 
 	for (abc = 'a'; abc <= 'z'; abc++)
 	{
-	if ((abc != 'e') (abc != 'e'))
+	if ((abc != 'e') (abc != 'q'))
 	putchar(abc);
 	}
 	putchar('\n')
