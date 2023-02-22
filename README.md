@@ -1,2 +1,1 @@
-# alx-low_level_programming
-Repository for learning C Programming!
+Learning C Functions and Nested Loops
