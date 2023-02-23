@@ -1,1 +1,1 @@
-Learning C Functions and Nested Loops
+Learning debugging in C
