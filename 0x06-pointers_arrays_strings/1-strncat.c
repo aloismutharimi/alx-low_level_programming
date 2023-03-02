@@ -12,6 +12,7 @@ char *_strncat(char *dest, char *src, int n)
 	int i;
 	char *destPointer = dest;
 	int len = 0;
+
 	if (dest == 0)
 	{
 		return (0);
