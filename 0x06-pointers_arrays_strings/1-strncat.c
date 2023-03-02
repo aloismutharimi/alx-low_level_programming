@@ -8,11 +8,14 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	/*Declare and init vars*/
 	int i;
 	char *destPointer = dest;
 	int len = 0;
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 3c1083e98b5ae9753ad507965c407c65cd043487
 	if (dest == 0)
 	{
 		return (0);
