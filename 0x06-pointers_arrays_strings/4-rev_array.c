@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * _strcat - Function to print and overwrite a string
- * @src: integer
- * @dest:integer
+ * reverse_array - Function to print and overwrite a string
+ * @a: array
+ * @n: number of elements in array
  */
 void reverse_array(int *a, int n)
 {
