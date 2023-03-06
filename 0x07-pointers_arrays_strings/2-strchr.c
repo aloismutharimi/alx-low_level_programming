@@ -2,26 +2,25 @@
 #include "main.h"
 
 /**
- * _strchr - Function to copy memory area
- * @s: Pointer
- * @c: Variable
- * Return: 0 (Success)
+ * _strchr - function that copies memory area.
+ * @s: pointer.
+ * @c: variable desing.
+ * Return: 0.
  */
-
 char *_strchr(char *s, char c)
 {
-	int x;
+	int i;
 
-	for (x = 0; s[x] != '\0'; x++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[x] == c)
-				{
-				return (s + x);
-				}
-				}
-	if (s[x] == c)
+		if (s[i] == c)
 	{
-	return (s + x);
+		return (s + i);
+	}
+	}
+	if (s[i] == c)
+	{
+		return (s + i);
 	}
 	return (0);
 }
