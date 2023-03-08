@@ -23,7 +23,7 @@ int wildcmp(char *s1, char *s2)
  * match_substring - matches the substring after wildcard
  * @s1: String
  * @s2: String
- * @ater_match; Placeholder
+ * @after_match; Placeholder
  * Return: 1 if matching, 0 otherwise
  */
 
