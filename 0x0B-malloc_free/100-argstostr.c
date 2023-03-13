@@ -6,6 +6,7 @@
  * argstostr - Function to concatenate all arguments
  * @ac: Integer
  * @av: Double pointer
+ * Return: 0 (Success)
  */
 
 char *argstostr(int ac, char **av)
@@ -23,7 +24,7 @@ char *argstostr(int ac, char **av)
 	}
 
 	l += ac;
-	str = malloc(sizeof(char) * l+1);
+	str = malloc(sizeof(char) * l + 1);
 
 	if (str == NULL)
 		return (NULL);
@@ -40,6 +41,5 @@ char *argstostr(int ac, char **av)
 		str[r++] = '\n';
 	}
 	}
-	
 	return (str);
 }
