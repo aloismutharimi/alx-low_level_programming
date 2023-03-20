@@ -3,12 +3,10 @@
 
 /**
  * init_dog - Function to initialize variable
- * 
  * @d: dog
  * @name: Dog name
  * @age: Age of dog
  * @owner: Owner of dog
- *
  * Return: 1 on Success, 0 Otherwise
  */
 
