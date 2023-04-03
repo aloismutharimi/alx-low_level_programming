@@ -9,34 +9,39 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
+
 	unsigned int i = 0;
-	listint_t *temp1, *temp2
+	listint_t *tmp, *tmp2;
 
-		if (*head == NULL)
-			return (-1);
+	/* account for empty list */
+	if (*head == NULL)
+		return (-1);
 
-	temp1 = *head;
+	tmp = *head;
 
+	/* account for deleting beginning node */
 	if (index == 0)
 	{
-		*head = temp1->next;
-		free(temp1);
+		*head = tmp->next;
+		free(tmp);
 		return (1);
 	}
 
-	while (i < (index -1) && temp1 != NULL)
+	/* iterate tmp to idx prior to idx we want to delete */
+	while (i < (index - 1) && tmp != NULL)
 	{
-		temp1 = temp1->next;
+		tmp = tmp->next;
 		i++;
 	}
 
-	if (i != (index - 1) || temp1 == NULL)
+	/* account for idx out of range: don't delete and return */
+	if (i != (index - 1) || tmp->next == NULL)
 		return (-1);
 
-	temp2 = temp1->next;
-	temp1->next = (temp1->next)->next;
-	free(temp2);
+	/* link prior idx before delete */
+	tmp2 = tmp->next;
+	tmp->next = (tmp->next)->next;
+	free(tmp2);
 
 	return (1);
 }
-
